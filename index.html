@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="estilo.css">
+    <title>Pokémon Selector</title>
+</head>
+<body>
+    <div class="conteiner">
+        <img class="logo" src="src/pp.png" >
+        <header><h1>Pokemon Weakness</h1></header>
+        <p>Sabe quando você quer saber o tipo de um Pokémon ? Porem você precisa saber pelomenos o nome dele, bom agora você não pecisa mais já que agora você pode
+            descobrir qual é tipo do Pokémon usando Inteligência Artificial que utiliza reconhecimento de imagem.</p>
+        <p>Com a ajuda dessa tabela você pode descobrir contra qual tipo o seu Pokémon tem vantagem e desvantagem.</p>
+        <p>Permita a webcam e aponte a imagem do Pokémon para a câmera.</p>
+
+        <button type="button" class="btn" onclick="init()">START</button>
+        <div id="webcam-container"></div>
+        <div id="label-container"></div>
+        <img class="tabela" src="src/typechart.png" >
+    </div>
+
+
+
+
+
+
+<script src="https://cdn.jsdelivr.net/npm/@tensorflow/tfjs@1.3.1/dist/tf.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@teachablemachine/image@0.8/dist/teachablemachine-image.min.js"></script>
+<script src="run.js"></script>
+</body>
+</html>
+
